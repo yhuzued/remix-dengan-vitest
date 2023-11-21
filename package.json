@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "remix build",
-    "dev": "remix dev --manual",
+    "dev": "remix dev -c \"node server.mjs\"",
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc",
     "test": "vitest"
@@ -14,12 +14,13 @@
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-slot": "^1.0.2",
     "@remix-run/css-bundle": "^2.3.0",
+    "@remix-run/express": "^2.3.0",
     "@remix-run/node": "^2.3.0",
     "@remix-run/react": "^2.3.0",
-    "@remix-run/serve": "^2.3.0",
     "@vitejs/plugin-react": "^4.2.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "express": "^4.18.2",
     "isbot": "^3.6.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -29,6 +30,7 @@
   "devDependencies": {
     "@remix-run/dev": "^2.3.0",
     "@remix-run/eslint-config": "^2.3.0",
+    "@remix-run/testing": "^2.3.0",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.5.1",
